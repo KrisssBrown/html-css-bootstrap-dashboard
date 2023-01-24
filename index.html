@@ -12,7 +12,48 @@
 <body class="viewport d-flex flex-column">
     
     <div class="header">
-        <div class="nav"></div>
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-1 ms-2 flex-shrink-0">
+                <img src="./img/logo.svg" alt="Logo" class="logo">
+            </div>
+            <div class="col-1 ms-2 flex-shrink-0">
+                <img src="./img/mobile-logo.png" alt="Logo" class="logo-small">
+            </div>
+            <div class="nav-search col-auto d-flex gap-2 py-1 mx-3 me-1 rounded-3 flex-grow-1">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class="w-100 border-0">
+            </div>
+            <div class="col-1 d-flex">
+                <ul class="d-flex align-items-center mb-0 px-3 ps-1 w-100 justify-content-between">
+                    <li>
+                        <i class="fa-solid fa-list-ul"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-question"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="navbar-dropdown" aria-expanded="false" role="button">
+                            <i class="fa-solid fa-bell"></i> 
+                        </a>
+
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="vertical--split d-flex flex-column-reverse vh-100">
