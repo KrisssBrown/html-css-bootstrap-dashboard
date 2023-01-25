@@ -56,26 +56,147 @@
 
     <div class="vertical--split d-flex flex-column-reverse vh-100">
 
-        <div class="horizontal--split d-flex flex-row-reverse overflow-hidden flex-grow-1">
-            <main class="main-horizontal flex-grow-1">
-                <div class="main-content">
+        <div class="horizontal--split d-flex overflow-hidden flex-grow-1">
+            <section class="sidebar">
+                <div class="container h-100">
+                    <div class="row h-100 p-3">
+                        <div class="col px-0">
+                            <ul class="sidebar-menu d-flex flex-column text-white ps-0 gap-2 h-100">
+                                <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2">
+                                    <i class="fa-solid fa-house"></i>
+                                    <a href="#" class="anchor-label">Home</a>
+                                </li>
+                                <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2">
+                                    <i class="fa-solid fa-chart-simple me-1"></i>
+                                    <a href="#" class="anchor-label">Stats</a>
+                                </li>
+                                <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2">
+                                    <i class="fa-solid fa-signal"></i>
+                                    <a href="#" class="anchor-label">Signals</a>
+                                </li>
+                                <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2 mt-auto">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <a href="#" class="anchor-label">Admin</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <main class="main-horizontal flex-grow-1 p-2">
+                <div class="main-container">
                     <div class="main-header">
                         ciao
                     </div>
-
-                    <div class="container">
-                        <div class="row">
+                    <div class="main-content container-fluid h-100">
+                        <div class="row py-4">
                             <div class="col-8">
                                 <div class="card d-flex">
-                                    <div class="card-header">
-                                      Featured
+                                    <div class="card-header fw-bold">
+                                        <h3>
+                                            Prossime Classi
+                                        </h3>
                                     </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
+                                    <ul class="list-group list-group-flush p-3">
+                                        <li class="list-group-item d-flex justify-content-between me-5">
+                                            <div class="list-item-name">
+                                                <span>
+                                                    Nome
+                                                </span>
+                                            </div>
+
+                                            <div class="list-item-info-label d-flex">
+                                                <span>
+                                                    Data Inizio
+                                                </span>
+                                                <span>
+                                                    ROI
+                                                </span>
+                                                <span>
+                                                    Stato
+                                                </span>
+                                                <span>
+                                                    Azioni
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <div class="list-item-name">
+                                                <img src="./img/class-avatar.jpg" alt="ClassAvatar" class="avatar">
+                                                <span>
+                                                    Classe 75
+                                                </span>
+                                            </div>
+
+                                            <div class="list-item-info d-flex gap-5">
+                                                <span>
+                                                    15 Feb 2021
+                                                </span>
+                                                <span>
+                                                    20%
+                                                </span>
+                                                <span>
+                                                    <span class="badge rounded-pill bg-success">Success</span>
+                                                </span>
+                                                <span>
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <div class="list-item-name">
+                                                <img src="./img/class-avatar.jpg" alt="ClassAvatar" class="avatar">
+                                                <span>
+                                                    Classe 76
+                                                </span>
+                                            </div>
+
+                                            <div class="list-item-info d-flex gap-5">
+                                                <span>
+                                                    Data Inizio
+                                                </span>
+                                                <span>
+                                                    ROI
+                                                </span>
+                                                <span>
+                                                    Stato
+                                                </span>
+                                                <span>
+                                                    Azioni
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <div class="list-item-name">
+                                                <img src="./img/class-avatar.jpg" alt="ClassAvatar" class="avatar">
+                                                <span>
+                                                    Classe 78
+                                                </span>
+                                            </div>
+
+                                            <div class="list-item-info d-flex gap-5">
+                                                <span>
+                                                    Data Inizio
+                                                </span>
+                                                <span>
+                                                    ROI
+                                                </span>
+                                                <span>
+                                                    Stato
+                                                </span>
+                                                <span>
+                                                    Azioni
+                                                </span>
+                                            </div>
+                                        </li>
+
                                     </ul>
-                                  </div>
                                 </div>
                             </div>
                             <div class="col-4 right-side">
@@ -84,37 +205,8 @@
                         </div>
                     </div>
                 </div>
-
-                <section class="sidebar">
-                    <div class="container h-100">
-                        <div class="row h-100 p-3">
-                            <div class="col px-0">
-                                <ul class="sidebar-menu d-flex flex-column text-white ps-0 gap-2 h-100">
-                                    <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2">
-                                        <i class="fa-solid fa-house"></i>
-                                        <a href="#" class="anchor-label">Home</a>
-                                    </li>
-                                    <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2">
-                                        <i class="fa-solid fa-chart-simple me-1"></i>
-                                        <a href="#" class="anchor-label">Stats</a>
-                                    </li>
-                                    <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2">
-                                        <i class="fa-solid fa-signal"></i>
-                                        <a href="#" class="anchor-label">Signals</a>
-                                    </li>
-                                    <li class="sidebar-item d-flex justify-content-center align-items-center gap-3 ms-2 mt-auto">
-                                        <i class="fa-solid fa-gear"></i>
-                                        <a href="#" class="anchor-label">Admin</a>
-                                    </li>
-                                </ul>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
             </main>
+            
                 
             
         </div>
