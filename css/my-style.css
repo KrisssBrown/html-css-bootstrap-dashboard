@@ -7,6 +7,7 @@
     --sidebar-width: 150px;
     --navbar-height: 70px;
     --input-tex-bgcolor:#E5E5E5;
+    --sidebar-bgcolor:#051E34;
 }
 
 ul,
@@ -41,24 +42,88 @@ input[type="text"], textarea{
     background-color: transparent;
 }
 
+.link-nav-container{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.main-header{
+    height: 125px;
+}
+
+.logo-container{
+    width: 170px;
+}
+
+.my-nav-list>li:not(.dropdown){
+    display: flex;
+}
+
+.dropdown{
+    color: orangered;
+}
+
 .logo{
     min-width: 150px;
+    display: block;
 }
 
 .logo-small{
     width: 33px;
     aspect-ratio: 1/1;
     margin: 0 auto;
+    display: none;
+}
+
+.sidebar{
+    background-image: url(../img/sidebar-bg.png);
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--sidebar-bgcolor);
+    width: 150px;
+    height: 100%;
+}
+
+.sidebar .row{
+    margin: 0 auto;
+}
+
+.sidebar-menu>.sidebar-item,
+.settings-col>div{
+    font-size: 16px;
+    width: max-content;margin: 0 auto;
 }
 
 
-/* MEDIAQUERY */
+                    /* MEDIAQUERY */
 
+                    @media screen and (max-width: 991.98px){
+                        .logo-container{
+                            width: 85px;
+                        }
 
+                        .logo{
+                            display: none;
+                        }
 
-/* .navbar-link{
-    min-width: 150px;
-} */
+                        .logo-small{
+                            display: block;
+                            width: 60px;
+                        }
+
+                        .my-nav-list>li:not(.dropdown){
+                            display: none;
+                        }
+
+                        .anchor-label{
+                            display: none;
+                        }
+
+                        .sidebar{
+                            width: 85px;
+                        }
+                    }
+
 
 
 
@@ -76,6 +141,10 @@ input[type="text"], textarea{
     /* height: calc(100vh - 150px); */
 }
 
+.right-side{
+    height: 50px;
+}
+
 /* .header{
     border: 2px solid sandybrown;
 } */
@@ -85,10 +154,10 @@ input[type="text"], textarea{
     /* flex-grow: 1   */
 }
 
-.horizontal--split>.sidebar{
+/* .horizontal--split>.sidebar{
     border: 2px solid purple;
     width: 170px;
-}
+} */
 
 /* .main-header{
     border: 2px solid blue;
@@ -100,9 +169,5 @@ input[type="text"], textarea{
     flex-grow: 1;
 } */
 
-.sidebar{
-    border: 2px solid salmon;
-    width: 150px;
-    height: 100%;
-}
+
 
